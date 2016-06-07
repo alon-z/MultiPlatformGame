@@ -2,27 +2,15 @@
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.counter = 16;
     }
-    Object.defineProperty(AppComponent.prototype, "message", {
-        get: function () {
-            if (this.counter > 0) {
-                return this.counter + " taps left";
-            }
-            else {
-                return "Hoorraaay! \nYou are ready to start building!";
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    AppComponent.prototype.onTap = function () {
-        this.counter--;
+    AppComponent.prototype.moveTo = function (where) {
+        console.log(where);
     };
     AppComponent = __decorate([
         core_1.Component({
             selector: "my-app",
-            template: "\n<StackLayout>\n    <Button text=\"Workers\"></Button>\n    <Button text=\"Projects\"></Button>\n</StackLayout>\n",
+            templateUrl: "./pages/Main/main.html",
+            styleUrls: ["./pages/Main/main.css"]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

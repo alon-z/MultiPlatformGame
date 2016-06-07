@@ -1,14 +1,14 @@
 import {Component} from "@angular/core";
+import {Worker} from "./share/Worker/Worker";
 
 @Component({
     selector: "my-app",
-    template: `
-<StackLayout>
-    <Button text="Workers"></Button>
-    <Button text="Projects"></Button>
-</StackLayout>
-`,
+    templateUrl: "./pages/Main/main.html",
+    styleUrls: ["./pages/Main/main.css"]
 })
+
 export class AppComponent {
-    
+    moveTo(where) {
+        console.log(where);
+    }
 }
