@@ -1,7 +1,6 @@
 import {Component} from "@angular/core";
 import {RouteConfig} from "@angular/router-deprecated";
 import {NS_ROUTER_DIRECTIVES, NS_ROUTER_PROVIDERS} from "nativescript-angular/router";
-
 import {MainPage} from "./pages/Main/main.component";
 import {WorkersPage} from "./pages/Workers/workers.component";
 
@@ -13,6 +12,6 @@ import {WorkersPage} from "./pages/Workers/workers.component";
 })
 @RouteConfig([
   { path: "/Main", component: MainPage, name: "Main", useAsDefault: true },
-  { path: "/Workers", component: WorkersPage, name: "Workers", useAsDefault: false },
+  { path: "/Workers", component: WorkersPage, name: "Workers" },
 ])
 export class AppComponent {}

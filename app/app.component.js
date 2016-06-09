@@ -16,7 +16,7 @@ var AppComponent = (function () {
         }),
         router_deprecated_1.RouteConfig([
             { path: "/Main", component: main_component_1.MainPage, name: "Main", useAsDefault: true },
-            { path: "/Workers", component: workers_component_1.WorkersPage, name: "Workers", useAsDefault: false },
+            { path: "/Workers", component: workers_component_1.WorkersPage, name: "Workers" },
         ]), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

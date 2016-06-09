@@ -4,18 +4,28 @@ import {Worker} from "../../share/Worker/Worker";
 
 @Component({
     selector: "my-workers",
-    templateUrl: "./pages/Workers/workers.html",
+    templateUrl: "./pages/Workers/workers.xml",
     styleUrls: ["./pages/Workers/workers.css"]
 })
 
 export class WorkersPage {
-    private location: Location;
+    public workerClassLink: Worker;
 
-    constructor(location: Location) {
+    constructor( private location: Location ) {
+        new Worker("test1");
+        new Worker("test2");
+        new Worker("test3");
+
         this.location = location;
+        this.workerClassLink = new Worker();
+
+        setTimeout(() => {
+            this.workerClassLink.getWorkers().getItem(2).dismiss();
+        }, 5000)
     }
 
-    Back() {
+    GoBack() {
+        console.log("backed");
         this.location.back();
     }
 }

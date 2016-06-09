@@ -4,6 +4,7 @@ var router_deprecated_1 = require("@angular/router-deprecated");
 var MainPage = (function () {
     function MainPage(router) {
         this.router = router;
+        this.router = router;
     }
     MainPage.prototype.moveTo = function (where) {
         console.log("Navigating to: " + where);
@@ -12,7 +13,7 @@ var MainPage = (function () {
     MainPage = __decorate([
         core_1.Component({
             selector: "my-main",
-            templateUrl: "./pages/Main/main.html",
+            templateUrl: "./pages/Main/main.xml",
             styleUrls: ["./pages/Main/main.css"]
         }), 
         __metadata('design:paramtypes', [router_deprecated_1.Router])
